@@ -1,6 +1,6 @@
-import { Given, Then } from '@cucumber/cucumber';
+﻿import { Given, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
-import type { TestWorld } from '../../main/test-world';
+import type { TestWorld } from '../../main/base/test-world';
 
 Given('I open {string}', async function (this: TestWorld, url: string) {
   await this.page!.goto(url);
