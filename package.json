@@ -1,0 +1,23 @@
+{
+  "name": "playwright-cucumber-world-structured",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test:run": "cucumber-js --config ./cucumber.js",
+    "test": "npm run build && npm run test:run",
+    "test:report": "npm run test && npm run report:mchr",
+    "report:mchr": "node scripts/generate-mchr-report.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "@types/chai": "^4.3.20",
+    "@types/node": "^24.5.0",
+    "chai": "^5.1.1",
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "playwright": "^1.47.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

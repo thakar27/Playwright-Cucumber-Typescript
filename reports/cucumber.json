@@ -1,0 +1,66 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sample-navigation;visit-example-site",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Visit example site",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 536419800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I open \"https://www.google.com/\"",
+            "match": {
+              "location": "dist\\test\\steps\\navigation.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3682451300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "I should see the title contains \"Google\"",
+            "match": {
+              "location": "dist\\test\\steps\\navigation.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10670100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69313599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sample-navigation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sample navigation",
+    "tags": [],
+    "uri": "src\\test\\features\\sample.feature"
+  }
+]
